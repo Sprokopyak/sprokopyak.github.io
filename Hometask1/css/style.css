@@ -1,0 +1,26 @@
+body{
+  font-family: 'Oswald', sans-serif;  /* font 'Oswald' looks better for logo, than others*/
+}
+
+#logo:before {
+    content: '<';
+    color: #39C2D7;     
+    padding-right: 5px;
+}
+
+#logo:after {
+    color: #39C2D7; 
+    padding-left: 5px;
+    content: '>';
+}
+
+#logo{
+    position: absolute;
+    top: 50%;  
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    text-decoration: none;
+    font-size: 130px;
+    color: #464547;
+    letter-spacing: -5px;  
+}

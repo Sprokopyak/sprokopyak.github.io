@@ -1,0 +1,214 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.wr {
+    position: relative;
+    max-width: 1300px;
+    margin: 50px auto;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.wr figure{
+    font-family: 'Source Sans Pro', sans-serif;
+    position: relative;
+    color: #fff;
+    float: left;
+    width: 23%;
+    margin: 0 1%;
+    overflow: hidden;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+figure * {
+    box-sizing: border-box;
+    transition: all 0.45s ease;
+}
+
+figure img {
+    max-width: 100%;
+    vertical-align: top;
+    cursor: pointer;
+}
+
+figure figcaption {
+    position: absolute;
+    top: calc(82%);
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.57);
+    padding: 15px 0;
+    cursor: pointer;
+}
+
+figure h3 {
+    font-weight: bold;
+    font-size: 20px; 
+    text-transform: uppercase;
+    padding-bottom: 60px;   
+}
+
+figure span{
+    font: bold 110px 'Oswald', sans-serif;
+}
+
+figure p {
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding-bottom: 300px;
+    margin-top: -20px;
+}
+
+figure a {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+figure:hover figcaption {
+    top: -50px;
+}
+
+
+#body:not(:target) #ex-block {
+    display: none;
+}
+
+#body:not(:target) .active {
+    display: none;
+}
+
+#body:target figure:hover #cz{
+    display: none;
+}
+
+#body:target #cz{
+    display: none;
+}
+
+@keyframes ex-block {
+    from {
+        opacity: 0;
+    }
+    
+    to {
+        opacity: 1;
+    }
+}
+
+footer{
+    animation: ex-block 900ms ease-in-out both;
+    position: relative;
+    font-family: 'Source Sans Pro', sans-serif;
+    margin: 0 1% 20px 1%;
+    padding: 40px 20px 100px 20px;
+    color: #464547;
+    border: 1px solid #ccc;
+    background-color: #f7f7f7;
+    overflow: hidden;  
+    transition:all 1s ease;
+}
+
+.active{
+    position: absolute;
+    right: 150px;
+    top: 310px;
+    z-index: 9;
+    display: block;
+    border-width: 0 9px 9px 9px;
+    border-style: solid;
+    border-color: transparent transparent #ccc transparent;
+}
+
+.active:after {
+    position: absolute;
+    display: block;
+    right: 50%;
+    bottom: -10px;
+    transform: translateX(50%);
+    content: '';
+    border-width: 0 9px 9px 9px;
+    border-style: solid;
+    border-color: transparent transparent #f7f7f7 transparent;
+}
+
+#close {
+    float: right;
+    cursor: pointer;
+    font-size: 20px;
+    color: #ccc;
+    text-decoration: none;
+    margin-top: -30px;
+}
+
+#close:hover{
+    color: #d11e1e;
+}
+
+footer h2{
+    font: bold 34px 'Oswald', sans-serif;
+    text-transform: uppercase;
+    margin: 10px 0 40px 60px;
+    color: #39C2D7; 
+}
+
+footer address{
+    font-size: 18px;
+    line-height: 1.125rem;
+    font-style: normal; 
+    border-right: 1px dashed #ccc;
+    width: 20%;
+    float: left;
+    padding-left: 60px;
+}
+
+/*it didn't work with "nth-child()", so I had to add id, to take out border form last block, and and add solid border for the second block, and add padding for the third block, because it wasn't the same height then previous two and border was shorter  */
+#br2{
+    border-right-style: solid;
+}
+
+#br3{
+    padding-bottom: 18px; 
+}
+
+#br4{
+    border: 0;
+}
+
+footer address p{
+    font: bold 20px 'Oswald', sans-serif;
+    margin-bottom: 22px;  
+}
+
+footer address .map {
+    display: block;
+    font-weight: bold;
+    text-decoration: none;
+    color: #7f993a;
+    margin: 10px 0 16px 0;  
+}
+
+footer address .map:hover{
+    text-decoration: underline;
+}
+
+footer address span, footer address span a{
+    color: #464547;
+}
+
+footer address span:hover a{
+    text-decoration: none;
+}
