@@ -1,0 +1,530 @@
+@font-face{
+    font-family:'Fugue Tails';
+    src:url(../fonts/font-cache.woff) format("woff");
+}
+
+@font-face{
+    font-family:Fugue;
+    src:url(../fonts/fugue_regular.woff); 
+}
+
+@font-face{
+    font-family:BauProMedium;
+    src:url(../fonts/329A31_0_0.eot);
+}
+
+@font-face{font-family:BauPro;
+    src:url(../fonts/329A31_1_0.ttf); 
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.container{
+    max-width: 1255px;
+    margin: 0 auto;
+}
+
+main .about h3, .about-section h3, .section3 h3, .read a, .team figure .name, .quest a, #use{
+    font: 400 18px 'BauProMedium', sans-serif;
+    line-height: 1.7em;
+}
+
+
+nav ul li a, main .about p, #work, .about-section p, .section3 p, .section2 article p, .team figure p, footer #copy{
+    font: 400 18px 'BauPro', sans-serif;
+}
+
+    
+main .about p, #work, .about-section p, .section3 p{  
+    padding: 20px 30px 0 0;
+    color: #000;
+}
+
+.work h2, .section2 h2, .section4 h2, .team h2{
+    font: 400 48px 'Fugue', sans-serif;
+}
+
+header{
+    position: relative;
+    z-index: 9999;
+    height: 230px;
+    background: linear-gradient(to right, rgba(192,185,190,1) 0%, rgba(223,205,180,0.99) 56%, rgba(222,205,181,0.99) 57%, rgba(195,213,202,0.99) 77%, rgba(163,218,225,0.98) 92%, rgba(163,218,225,0.98) 100%);
+}
+
+header h1 a{
+    text-decoration: none;
+    text-transform: lowercase;
+    margin: 100px 48px 0 0;
+    font: 400 52px 'Fugue', sans-serif;
+    float: right;
+    color: #231f20;
+}
+
+#logo{
+    margin: 53px 0 0 5px;
+    float: left;
+    display: block;
+}
+
+nav{
+    position: absolute;
+    margin-top: 260px;
+    float: right;
+    right: 90px;
+}
+
+nav ul li{
+    list-style-type: none;
+    display: inline-block;
+    margin-left: 56px;
+    position: relative;
+}
+
+nav ul li:after, .contact a:after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #000;
+    transition: width .3s; 
+}
+
+nav ul li:hover:after, .contact a:hover:after {
+    width: 100%;
+}
+
+nav ul li:nth-child(3):after{
+    width: 100%;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #4f0000;
+}
+
+main {
+    position: relative;
+    display: block;
+}
+
+main h2{
+    margin-top: 250px;
+    font: 400 60px 'Fugue Tails', sans-serif;
+    padding-left: 40px;  
+}
+
+main .about{
+    width: 49%;
+    float: right;
+    margin-top: 139px;
+    position: relative;
+    display: block;
+}
+
+.work{
+    width: 60%;
+    position: relative;
+    display: block;
+}
+
+.work h2{
+    padding-top: 210px;
+    padding-left: 120px;
+    z-index: 3;
+    position: relative; 
+}
+
+.work svg{
+    width: 70px;
+    position: absolute;
+    top: 205px;
+    left: 50px;
+}
+
+.work .img1{      
+    margin-top: -105px;
+    margin-left: 74%;
+    float: left;
+    display: block;
+    margin-right: 3.5533%;
+    width: 74%;
+    position: relative;
+    z-index: 1;
+}
+
+.work .img2{
+    float: left;
+    display: block;
+    width: 61%;
+    position: relative;
+    z-index: 5;
+    margin-left: 34%;
+    margin-top: -540px;
+}
+
+#work{
+    display: flex;
+    width: 43%;
+    float: right;
+    padding: 130px 30px 130px 0;
+}
+
+section{
+    display: inline-block;
+    position: relative;
+    width: 100%;
+}
+
+section #protest{
+    display: block;
+    width: 36.2%;
+    float: left;
+    margin: 0px 0 0 50px;
+}
+
+section #posit{
+    margin: 105px 40px 0 0;
+    display: block;
+    width: 30%;
+    float: right;
+}
+
+.about-section {
+    position: absolute;
+    top: 610px;
+    width: 45%;
+    right: 0;
+    padding-right: 40px;
+}
+
+.section2 h2{
+    padding-top: 50px;
+    position: relative;
+    width: 60%;
+}
+
+.section2 article{
+    display: block;
+    position: relative;
+    width: 33.33333%;
+    float: left;
+    text-align: center;
+    margin-top: 125px;
+}
+
+.section2 article h3{
+    font: 400 40px 'Fugue Tails', sans-serif;
+}
+
+.section2 article svg{
+    transform: rotate(90deg);
+    width: 35px;
+    margin: 40px 0;
+}
+
+.section2 article p{
+    padding-bottom: 20px;
+    color: #000;
+}
+
+.section3{
+    padding: 76px 0 0 0;
+}
+
+.section3 #west{
+    display: block;
+    position: relative;
+    float: left;
+    width: 52.5%;
+    padding-left: 50px;
+} 
+
+.section3 #hand{
+    display: block;
+    position: relative;
+    float: left;
+    width: 21%;
+    padding: 200px 0 0 40px;
+}
+
+.about-section3{
+    float: left;
+    display: block;
+    margin-right: 3.5533%;
+    width: 47%;
+    margin: 180px 0 110px 52%;
+    position: relative;
+}
+
+.section4 h2{
+    margin: 0 0 0 120px;
+    position: relative;
+    width: 65%;
+    z-index: 5;
+}
+
+.section4 #coast{
+    z-index: 1;
+    display:block;
+    position: relative;
+    float: left;
+    width: 36.5%;
+    margin: -55px 0 0 35.8%;
+}
+
+.section4 #shop{
+    display:block;
+    position: relative;
+    float: left;
+    width: 20.5%;
+    margin: 110px 0 0 -60px;
+    z-index: 3;
+}
+
+.read{
+    text-align: center;
+    margin: 120px 0 105px 0;
+}
+.read a{
+    text-decoration: none;
+    color: #170000;
+    display: inline-block;
+    position: relative;
+}
+
+.quest a:before, .read a:before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    width: 100%;
+    transition: width 0s ease;
+}
+
+.quest a:after, .read a:after {
+    content: '';
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height: 2px;
+    width: 100%;
+    background: #000;
+    transition: width .5s ease;
+}
+
+.quest a:hover:before, .read a:hover:before {
+    width: 0%;
+    background: #000;
+    transition: width .5s ease;
+}
+.quest a:hover:after, .read a:hover:after {
+    width: 0%;
+    background: transparent;
+    transition: width 0s ease;
+}
+
+.team{
+     background: linear-gradient(to right, rgba(192,185,190,1) 0%, rgba(223,205,180,0.99) 56%, rgba(222,205,181,0.99) 57%, rgba(195,213,202,0.99) 77%, rgba(163,218,225,0.98) 92%, rgba(163,218,225,0.98) 100%);
+}
+
+.team .container{
+    padding: 0 95px;
+}
+
+.team h2{
+    margin: 0 auto;
+    text-align: center;
+    color: #fff;
+    padding: 170px 0 80px 0;
+    width: 70%;
+}
+
+.team figure img{
+    max-width: 100%;
+}
+
+.team figure{
+    display: block;
+    position: relative;
+    float: left;
+    width: 27%;
+    padding: 0 3%;
+    color: #fff;
+    text-align: center;
+    margin-top: 90px;
+}
+
+.team figure .name {
+    padding-top: 20px;
+}
+
+.team .partner{
+    display: inline-block;
+    position: relative;
+}
+
+.team .partner h2{
+    padding: 250px 0 180px 0;
+}
+
+.team .partner img{
+    width: 21%;
+    padding: 0 6%;
+    display: block;
+    position: relative;
+    float: left;
+    padding-bottom: 280px;
+}
+
+.team hr{
+    height: 3px;
+    margin: 40px 0 70px 0;
+    border: none;
+    background: #fff;
+    width: 100%;
+}
+
+#hr2{
+   height: 1px; 
+}
+
+.quest a, #use{
+    text-decoration: none;
+    color: #fff;
+}
+
+.quest{
+    text-align: center;
+}
+
+.quest a {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 100px;
+}
+
+.quest a:after {
+    background: #fff;
+}
+
+.quest a:hover:before {
+    background: #fff;
+}
+
+#use{
+    margin-top: 20px;
+}
+
+#nav2{
+    margin-top: 0;
+    position: relative;
+}
+
+#nav2 ul li a{
+   color: #fff; 
+}
+
+#nav2 ul li:nth-child(3):after{
+    width: 0;
+}
+
+#nav2 ul li:nth-child(3):hover:after{
+    width: 100%;
+}
+
+#nav2 ul li:after, .contact a:after {
+    background: #fff;
+}
+
+footer address{
+    display: block;
+    position: relative;
+    width: 33.3333%;
+    float: left;
+    color: #fff;
+    font-style: normal;
+    padding-bottom: 100px;
+}
+
+footer address span, footer address a{
+    font: 400 22px 'Fugue', sans-serif;
+    padding-bottom: 15px;
+}
+
+footer address  a{
+    color: #fff;
+    text-decoration: none;
+    display: inline-block; 
+}
+
+footer .contact a{
+    margin-left: 120px;
+}
+
+footer .social{
+    text-align: right;
+}
+
+footer .social a{
+    display: inline-block;
+    font-size: 30px;
+    margin-right: 20px;
+}
+
+footer .social  a:hover{
+    color: #d3edec;
+}
+
+footer .social a:last-child {
+    margin-right: 40px;
+}
+
+footer #copy{
+    float: left;
+    width: 100%;
+    text-align: left;
+    padding-bottom: 60px;
+    color: #fff;
+}
+
+#map a span{
+    display:inline-block;
+}
+
+#map a span:after {
+    transform: scaleX(0);
+    transition: transform .3s cubic-bezier(.2,.485,.205,1);
+    transform-origin: 0 50%;
+    border-bottom: 2px solid #fff;
+    content: '';
+    display: block; 
+}
+
+#map a:hover span::after{
+    transform:scaleX(1);
+}
+
+#map a::after{
+    display:none;
+}
+
+#map a span:nth-child(2)::after{
+    transition:transform .3s .1s cubic-bezier(.2,.485,.205,1);
+}
+
