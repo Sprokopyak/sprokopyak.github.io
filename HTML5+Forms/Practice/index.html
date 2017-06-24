@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML5 + Forms Lecture</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/favicon.ico">
+</head>
+<body>
+    <a href="http://edition.cnn.com/" target="_blank"> <img src="img/cnn.jpeg" alt="Cable News Network"></a>
+    <hr> 
+    <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 4
+            <ul>
+            <li>Sub item 1</li>
+            <li>Sub item 2</li>
+            <li>Sub item 3</li>
+            </ul>
+        </li>
+        <li>Item 5</li>
+    </ul>
+    <hr>
+    
+<!-- .....Table........-->
+    <table>
+    <caption>Chemical formulas</caption>
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Formula</th>
+            <th>Molar mass</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>Water</td>
+            <td>H <sub>2</sub>O</td>
+            <td rowspan="3">1</td>
+        </tr>
+        <tr>
+            <td>Sulfuric acid</td>
+            <td>H <sub>2</sub> SO <sub>4</sub></td>
+        </tr>
+        <tr>
+            <td>Calcium carbonate</td>
+            <td>CaCO <sub>3</sub></td>
+        </tr>
+        </tbody>
+    </table>
+    <hr>
+    
+<!--.......form..........-->
+    <h3>REGISTER</h3>
+    <form action="#0">
+    <input type="number" placeholder="Invitation code">
+    <br><br>
+    <input type="text" name="Username" placeholder="Username"><br>
+    <input type="text" name="Public name" placeholder="Public name"><br>
+    <input type="email" name="Email address" placeholder="Email address"><br>
+    <br><br>
+    <input type="password" name="Password" placeholder="Password"><br>
+    <input type="password" name="Password" placeholder="Password"><br><br>
+    <input type="checkbox" id="agree" name="agree">
+    <label for="agree">I agree to the <a href="#0">Terms &amp; Conditions</a></label><br><br>
+    <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
