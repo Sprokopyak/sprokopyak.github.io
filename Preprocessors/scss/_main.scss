@@ -1,0 +1,104 @@
+$bodyFont: null !default;
+$bodyBackground: null !default;
+$contentBackground: null !default;
+$textColor: null !default;
+$titleColor: null !default;
+$borderWidth: null !default;
+$borderColor: null !default;
+$briefBackground: null !default;
+$tableTitleBg: null !default;
+$tableBorder: null !default;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font: $bodyFont;
+    background: $bodyBackground;
+    color: $textColor;
+    padding: 15px 0;
+}
+
+#content {
+    width: 1180px;
+    margin: 0 auto;
+    background: $contentBackground;
+    padding: 50px 60px 60px 60px;
+    
+    h1 {
+        color: $titleColor;
+        margin-bottom: 60px;
+    }
+    
+    h2 {
+        @extend h1;
+        margin: 60px 0 30px 0;
+    }
+    
+    p {
+        padding-bottom: 30px;
+        
+        &:last-child {
+            padding-bottom: 0;
+        }
+    }
+
+    .img-left {
+        border: $borderWidth solid $borderColor;
+        margin: 0 40px 35px 0;
+        float: left;
+    }
+    
+    .brief {
+        font-style: italic;
+        background: $briefBackground;
+        padding: 50px 40px 40px 40px;
+        margin-bottom: 40px;
+    }
+    
+    .img-right {
+        float: right;
+        border: $borderWidth solid $borderColor;
+        margin-bottom: 40px;
+    }
+    
+    a[href="culture.html"] {
+        display: inline-block;
+        margin-bottom: 10px;
+        
+        &:hover {
+            color: darken($titleColor, 10%);
+        }
+    }
+    
+    table {
+        border-spacing: 0;
+        color: $textColor;
+        
+        caption {
+            text-align: right;
+            font-style: italic;
+            font-weight: bold;
+            margin-bottom: 30px;
+        }
+        
+        th {
+            text-align: left;
+            padding: 30px 40px;
+            background: $tableTitleBg;
+            font-weight: normal;
+        }
+        
+        td {
+            padding: 30px 40px;
+            border-bottom: 2px solid $tableBorder;
+            
+            a:hover {
+                color: darken($titleColor, 10%);
+            }
+        }
+    }
+}

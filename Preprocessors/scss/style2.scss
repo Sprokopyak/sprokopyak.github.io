@@ -1,0 +1,27 @@
+@import "variables2";
+@import "main";
+#content {
+    
+    .img-left {
+        padding: 20px;
+    }
+    
+    .img-right {
+        padding: 20px;
+        margin-left: 40px;
+    }
+    
+    a[href="culture.html"] {
+        color: $titleColor;
+    }
+    
+    table {
+        td {
+            background: $briefBackground;
+            
+            a {
+                color: $titleColor;
+            }
+        }
+    }
+}
