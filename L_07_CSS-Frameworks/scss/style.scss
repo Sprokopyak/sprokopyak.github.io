@@ -1,0 +1,96 @@
+$mainColor: #2A74BF !default;
+$relatedCardioBackground: #D7514C !default;
+$relatedZumbaBackground: #D8C11D !default;
+$relatedBootcampBackground: #4D944B !default;
+$footerBackground: #666 !default;
+
+.navbar-default {
+    border-radius: 0;
+}
+
+.navbar-default .navbar-nav>.active>a,
+.navbar-default .navbar-nav>.active:hover a,
+.navbar-default .navbar-nav>.active>a:focus,
+.navbar-default .navbar-nav>li>a:hover {
+    background-color: $mainColor;
+    color: #fff;
+}
+
+.page-header {
+    border-color: $mainColor;
+    h1 {
+        font-weight: bold;
+        color: $mainColor;
+    }
+}
+
+h2 {
+    font-weight: bold;
+    color: $mainColor;
+}
+
+.related-class {
+    h2 {
+        margin-top: 40px;
+    }
+    hr {
+        border-color: $mainColor;
+    }
+    a {
+        text-decoration: none;
+    }
+    .thumbnail {
+        padding: 0;
+        border-radius: 0;
+        .caption {
+            color: #fff;
+            text-align: center;
+            padding: 6px;
+            h3 {
+                margin: 10px 0;
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+.row .col-lg-3 {
+    &:first-child .thumbnail {
+        background-color: $relatedCardioBackground;
+        border-color: $relatedCardioBackground;
+        &:hover {
+            background-color: darken($relatedCardioBackground, 10%);
+        }
+    }
+    &:nth-child(2) .thumbnail {
+        background-color: $mainColor;
+        border-color: $mainColor;
+        &:hover {
+            background-color: darken($mainColor, 10%);
+        }
+    }
+    &:nth-child(3) .thumbnail {
+        background-color: $relatedZumbaBackground;
+        border-color: $relatedZumbaBackground;
+        &:hover {
+            background-color: darken($relatedZumbaBackground, 10%);
+        }
+    }
+    &:last-child .thumbnail {
+        background-color: $relatedBootcampBackground;
+        border-color: $relatedBootcampBackground;
+        &:hover {
+            background-color: darken($relatedBootcampBackground, 10%);
+        }
+    }
+}
+
+.footer {
+    margin-top: 20px;
+    p {
+        background-color: $footerBackground;
+        padding: 15px 20px;
+        margin: 0;
+        color: #fff;
+    }
+}

@@ -1,0 +1,80 @@
+.navbar-default {
+    border-radius: 0;
+}
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active:hover a,
+.navbar-default .navbar-nav > .active > a:focus,
+.navbar-default .navbar-nav > li > a:hover {
+    background-color: #2A74BF;
+    color: #fff;
+}
+.page-header {
+    border-color: #2A74BF;
+}
+.page-header h1 {
+    font-weight: bold;
+    color: #2A74BF;
+}
+h2 {
+    font-weight: bold;
+    color: #2A74BF;
+}
+.related-class h2 {
+    margin-top: 40px;
+}
+.related-class hr {
+    border-color: #2A74BF;
+}
+.related-class a {
+    text-decoration: none;
+}
+.related-class .thumbnail {
+    padding: 0;
+    border-radius: 0;
+}
+.related-class .thumbnail .caption {
+    color: #fff;
+    text-align: center;
+    padding: 6px;
+}
+.related-class .thumbnail .caption h3 {
+    margin: 10px 0;
+    font-size: 14px;
+}
+.row .col-lg-3:first-child .thumbnail {
+    background-color: #D7514C;
+    border-color: #D7514C;
+}
+.row .col-lg-3:first-child .thumbnail:hover {
+    background-color: #c4312c;
+}
+.row .col-lg-3:nth-child(2) .thumbnail {
+    background-color: #2A74BF;
+    border-color: #2A74BF;
+}
+.row .col-lg-3:nth-child(2) .thumbnail:hover {
+    background-color: #215b95;
+}
+.row .col-lg-3:nth-child(3) .thumbnail {
+    background-color: #D8C11D;
+    border-color: #D8C11D;
+}
+.row .col-lg-3:nth-child(3) .thumbnail:hover {
+    background-color: #ab9917;
+}
+.row .col-lg-3:last-child .thumbnail {
+    background-color: #4D944B;
+    border-color: #4D944B;
+}
+.row .col-lg-3:last-child .thumbnail:hover {
+    background-color: #3b723a;
+}
+.footer {
+    margin-top: 20px;
+}
+.footer p {
+    background-color: #666;
+    padding: 15px 20px;
+    margin: 0;
+    color: #fff;
+}
