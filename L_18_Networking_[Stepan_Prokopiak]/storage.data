@@ -1,0 +1,12 @@
+[{
+"id":"1",
+"username":"john",
+"email":"john.doe@myownservice.com",
+"password":"q8xowdnaxitf3g3ffjjl"
+},
+{
+"id":"2",
+"username":"john",
+"email":"friend.of.john.doe@myownservice.com",
+"password":"2a1cgv7e0be2d26my8g9"
+}]

@@ -1,0 +1,16 @@
+{
+    "name": "homework",
+    "description": "homework networking",
+    "version": "0.0.1",
+    "private": true,
+    "main": "app.js",
+    "dependencies": {
+        "body-parser": "^1.17.2",
+        "express": "^4.15.4"
+    },
+    "author": "Stepan Prokopiak",
+    "license": "ISC",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    }
+}
