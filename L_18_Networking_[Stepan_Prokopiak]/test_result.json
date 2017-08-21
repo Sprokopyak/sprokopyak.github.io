@@ -1,0 +1,104 @@
+C:\Users\Степан\Desktop\L_18_Networking_[Stepan_Prokopiak]
+λ npm test
+
+> homework@0.0.1 test C:\Users\Степан\Desktop\L_18_Networking_[Stepan_Prokopiak]
+> mocha tests/
+
+
+
+  Service api
+    /users
+      GET
+        1) will return positive result with status code: 200
+      POST
+        - will return negative result with status code: 400
+        2) will return positive result with status code: 201
+        3) will return negative result with status code: 409
+    /users/1
+      GET
+        4) will return positive result with status code: 200
+      PUT
+        5) will return positive result with status code: 200
+      DELETE
+        6) will return positive result with status code: 200
+
+
+  0 passing (149ms)
+  1 pending
+  6 failing
+
+  1) Service api /users GET will return positive result with status code: 200:
+
+      AssertionError: expected 404 to equal 200
+      + expected - actual
+
+      -404
+      +200
+
+      at it (tests\api.tests.js:22:16)
+      at <anonymous>
+      at process._tickCallback (internal/process/next_tick.js:188:7)
+
+  2) Service api /users POST will return positive result with status code: 201:
+
+      AssertionError: expected 404 to equal 201
+      + expected - actual
+
+      -404
+      +201
+
+      at it (tests\api.tests.js:45:16)
+      at <anonymous>
+      at process._tickCallback (internal/process/next_tick.js:188:7)
+
+  3) Service api /users POST will return negative result with status code: 409:
+
+      AssertionError: expected 404 to equal 409
+      + expected - actual
+
+      -404
+      +409
+
+      at it (tests\api.tests.js:59:16)
+      at <anonymous>
+      at process._tickCallback (internal/process/next_tick.js:188:7)
+
+  4) Service api /users/1 GET will return positive result with status code: 200:
+
+      AssertionError: expected 404 to equal 200
+      + expected - actual
+
+      -404
+      +200
+
+      at it (tests\api.tests.js:79:16)
+      at <anonymous>
+      at process._tickCallback (internal/process/next_tick.js:188:7)
+
+  5) Service api /users/1 PUT will return positive result with status code: 200:
+
+      AssertionError: expected 404 to equal 200
+      + expected - actual
+
+      -404
+      +200
+
+      at it (tests\api.tests.js:97:16)
+      at <anonymous>
+      at process._tickCallback (internal/process/next_tick.js:188:7)
+
+  6) Service api /users/1 DELETE will return positive result with status code: 200:
+
+      AssertionError: expected 404 to equal 200
+      + expected - actual
+
+      -404
+      +200
+
+      at it (tests\api.tests.js:108:16)
+      at <anonymous>
+      at process._tickCallback (internal/process/next_tick.js:188:7)
+
+
+
+npm ERR! Test failed.  See above for more details.
