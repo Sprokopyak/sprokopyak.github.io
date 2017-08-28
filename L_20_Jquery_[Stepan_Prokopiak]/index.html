@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Jquery game</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <main>
+        <div class="container clearfix">
+            <div class="timer">
+                <h3>Time:</h3>
+                <img src="img/time.svg" alt="timer">
+                <span class="minutes">00</span><span>:</span><span class="seconds">00</span>
+            </div>
+
+            <div class="steps">
+                <h3>Steps:</h3>
+                <img src="img/steps.svg" alt="steps">
+                <span id="steps"></span>
+            </div>
+        </div>
+        <table>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
+
+        <button id='restart'>New game</button>
+        <button id="win">Win</button>
+    </main>
+
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

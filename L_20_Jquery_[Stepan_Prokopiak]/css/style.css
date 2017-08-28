@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+main {
+    max-width: 500px;
+    position: relative;
+    margin: 50px auto;
+    text-transform: uppercase;
+    color: #727272;
+    font-size: 16px;
+}
+
+.container div {
+    position: relative;
+    width: 50%;
+    float: left;
+}
+
+.timer img,
+.steps img {
+    width: 35px;
+    margin: 5px 5px 0 0;
+}
+
+.timer span,
+.steps span {
+    font-size: 30px;
+    font-weight: bold;
+    color: #5f5b5b;
+}
+
+.steps span {
+    margin-left: 5px;
+}
+
+table {
+    position: relative;
+    margin: 30px 0;
+}
+
+td {
+    border-radius: 10px;
+    font-weight: bold;
+    background-color: #4a90e2;
+    color: #fff;
+    cursor: pointer;
+    font-size: 45px;
+    width: 2em;
+    height: 2em;
+    text-align: center;
+    transition: 1s;
+    box-sizing: border-box;
+}
+
+td:hover {
+    border: 1px solid #2e598d;
+}
+
+button {
+    cursor: pointer;
+    display: block;
+    width: 78%;
+    padding: 15px 0;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 17px;
+    color: #5f5b5b;
+    border-radius: 5px;
+    background-color: #48d1cc;
+    border: none;
+}
+
+#win {
+    background-color: transparent;
+    border: 2px solid #48d1cc;
+    color: #48d1cc;
+}
