@@ -16,7 +16,7 @@
 main {
     max-width: 500px;
     position: relative;
-    margin: 50px auto;
+    margin: 30px auto;
     text-transform: uppercase;
     color: #727272;
     font-size: 16px;
@@ -47,7 +47,7 @@ main {
 
 table {
     position: relative;
-    margin: 30px 0;
+    margin: 20px 0;
 }
 
 td {
@@ -72,7 +72,7 @@ button {
     cursor: pointer;
     display: block;
     width: 78%;
-    padding: 15px 0;
+    padding: 12px 0;
     margin-bottom: 10px;
     text-transform: uppercase;
     font-weight: bold;
