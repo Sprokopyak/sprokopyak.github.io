@@ -1,0 +1,13 @@
+@import "variables.scss";
+body{
+    background: red;
+a { 
+    font-family: $font-stack; 
+}
+
+span.link {
+  color: $primary-color;
+  text-decoration: underline; 
+}
+}
+
