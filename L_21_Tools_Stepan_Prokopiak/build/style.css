@@ -1,0 +1,7 @@
+body {
+  background: red; }
+  body a {
+    font-family: Helvetica, sans-serif; }
+  body span.link {
+    color: #333;
+    text-decoration: underline; }
