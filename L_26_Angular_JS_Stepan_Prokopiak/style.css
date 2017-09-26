@@ -1,0 +1,10 @@
+img{
+    max-width: 120px;
+}
+
+.student{
+    display: block;
+    position: relative;
+    float: left;
+    max-width: 50px;
+}
