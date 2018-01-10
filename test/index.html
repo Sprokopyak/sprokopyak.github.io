@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Smart watch</title>
+</head>
+<body>
+
+<div class="header">
+    <div class="container ">
+        <a href="#" class="logo">
+            <img src="img/logo.png" alt="Logo">
+            <span>Smart Watch</span>
+        </a>
+        <div class="call">
+            <a href="tel:0000000000"><i class="fa fa-phone" aria-hidden="true"></i>+380 00 111 00 11</a>
+            <a href="#" id="openModal">Order callback</a>
+        </div>
+    </div>
+</div>
+
+<div id="myModal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <div class="modal-body">
+            <h3>Замовити дзвінок</h3>
+            <form action="sendmail.php" class="clearfix form" id="form" data-them="Тема" data-show="#submitModal">
+                <div class="input">
+                    <input type="text" placeholder="Вашt ім'я*" name="name" data-name="Ім'я: " data-required>
+                </div>
+                <div>
+                    <input type="text" placeholder="Ваш телефон*" name="phone" data-name="Телефон: " data-required>
+                </div>
+                <div>
+                    <input id="submit" type="submit" value="Передзвоніть мені!">
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<div id="submitModal" class="myModal modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <div class="modal-body">
+            <h3>Ваші дані збережено!</h3>
+    </div>
+    </div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
