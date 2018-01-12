@@ -58,29 +58,29 @@ function validateContact() {
     return valid;
 }
 
-//openModal.onclick = function () {
-//    modal.style.display = "block";
-//};
-////
-//// submit.onclick = function () {
-////     submitModal.style.display = "block";
-////     modal.style.display = "none";
-//// };
-//
-//span.onclick = function () {
-//    modal.style.display = "none";
-//};
-//
-//// spanSecond.onclick = function () {
-////     submitModal.style.display = "none";
-//// };
-//
-//window.onclick = function (event) {
-//    if (event.target === modal || event.target === submitModal) {
-//        modal.style.display = "none";
-//        // submitModal.style.display = "none";
-//    }
-//};
+openModal.onclick = function () {
+   modal.style.display = "block";
+};
+
+ submit.onclick = function () {
+    submitModal.style.display = "block";
+     modal.style.display = "none";
+ };
+
+span.onclick = function () {
+   modal.style.display = "none";
+};
+
+ spanSecond.onclick = function () {
+     submitModal.style.display = "none";
+ };
+
+window.onclick = function (event) {
+   if (event.target === modal || event.target === submitModal) {
+       modal.style.display = "none";
+        // submitModal.style.display = "none";
+    }
+};
 new WOW().init();
 //gallery
 $(document).ready(function () {
